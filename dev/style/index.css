@@ -837,8 +837,63 @@ a {
     align-self: center; }
     .m-index section .lunbo {
       width: 100%;
-      height: 540px;
-      background: red; }
+      height: 540px; }
+      .m-index section .lunbo .swiper-container .scroll {
+        text-align: center; }
+      .m-index section .lunbo .swiper-container img {
+        width: 100%;
+        height: auto; }
+      .m-index section .lunbo .swiper-container h3 {
+        margin-top: .2rem;
+        font-size: .18rem;
+        color: #1d1d1d;
+        font-weight: bold;
+        line-height: .36rem; }
+      .m-index section .lunbo .swiper-container h4 {
+        font-size: .13rem;
+        color: #1d1d1d; }
+      .m-index section .lunbo .swiper-container a {
+        color: #000;
+        font-size: .18rem;
+        position: relative;
+        text-align: center;
+        width: 1rem;
+        height: .3rem;
+        line-height: .3rem;
+        display: flex;
+        margin: 0 auto; }
+        .m-index section .lunbo .swiper-container a::after {
+          pointer-events: none;
+          position: absolute;
+          z-index: 999;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          content: "\0020";
+          border-color: #000000;
+          border-style: solid;
+          border-width: 2px;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0; }
+          @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+            .m-index section .lunbo .swiper-container a::after {
+              width: 100%;
+              height: 100%; } }
+          @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+            .m-index section .lunbo .swiper-container a::after {
+              width: 200%;
+              height: 200%;
+              -webkit-transform: scale(0.5);
+              transform: scale(0.5); } }
+          @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+            .m-index section .lunbo .swiper-container a::after {
+              width: 300%;
+              height: 300%;
+              -webkit-transform: scale(0.33333);
+              transform: scale(0.33333); } }
+      .m-index section .lunbo .swiper-container .scroll-btn {
+        width: 100%;
+        height: .8rem; }
     .m-index section .new-product {
       background: #F0F0F0;
       padding: 15px 0 18px;
