@@ -86,7 +86,7 @@
 /* 4 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div></div>"
+	module.exports = "<div>	<ul>		<li>品牌故事</li>|		<li>客户服务</li>|		<li class=\"yo-ico\">&#xe60b;</li>|		<li class=\"yo-ico\">&#xe60a;</li>|		<li class=\"yo-ico\">&#xe618;</li>	</ul></div>"
 
 /***/ }),
 /* 5 */

@@ -27,7 +27,7 @@ gulp.task('webserver',function(){
 	gulp.src('./build/')
 		.pipe(
 			webserver({
-				host:'10.9.166.11',
+				host:'localhost',
 				port:8000,
 				directoryListing:{
 					enable:true,
@@ -39,7 +39,7 @@ gulp.task('webserver',function(){
 					proxy('/mock',{
 						target:'http://localhost:9000',
 						pathRewrite:{
-							''
+							'^/mock':''
 						}
 					})
 				]
