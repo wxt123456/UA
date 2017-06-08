@@ -1,5 +1,14 @@
 
 #footer {
-  height: .45rem;
-  background: #333;
+    div{
+      height: .45rem;
+      @include border(1px 0 1px 0,#dcdcdc);
+      ul{
+          height: 100%;
+          @include flexbox();
+          align-items: center;
+          justify-content: space-around;
+      }
+    }
+  
 }
