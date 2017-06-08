@@ -2,6 +2,46 @@
   <div id="header"></div>
   <section>
    	<div class="lunbo">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/KV/KV-Threadborne-20170516/kv08-mob.jpg" alt="" />
+		       		<div class="scroll">
+		       			<h3>以全力以赴之势 带来不凡的穿着体验</h3>
+		       			<h4>铸就UA THREADBORNE SLINGFLEX非凡的舒适鞋面</h4>
+		       		</div>
+		       		<div class="scroll-btn">
+		       			<a href="###">立即购买</a>
+		       		</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/KV/KV-seasonal-lookbook-lifestyle-20170518/z09mob.jpg" alt="" />
+		       		<div class="scroll">
+		       			<h3>UA CLOSE UP</h3>
+		       			<h4>本季热门潮流，凸显时尚个性，成为瞩目焦点</h4>
+		       		</div>
+		       		<div class="scroll-btn">
+		       			<a href="###">立即购买</a>
+		       			<a href="###">了解更多</a>
+		       			
+		       		</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/KV/KV-Threadborne-20170516/kv08-mob.jpg" alt="" />
+		       		<div class="scroll">
+		       			<h3>UA革新再创</h3>
+		       			<h4>更佳材质 更赞体感</h4>
+		       		</div>
+		       		<div class="scroll-btn">
+		       			<a href="###">立即购买</a>
+
+		       			
+		       		</div>
+		        </div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
 		
    	</div>
    	<article class="box-content">
