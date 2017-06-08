@@ -44,39 +44,12 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	module.exports = __webpack_require__(7);
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-
-
-	__webpack_require__(2)
-
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-
-
-	var headerTpl = __webpack_require__(3)
-	var footerTpl = __webpack_require__(4)
-	var indexTpl = __webpack_require__(5)
-
-	var commonUtil = __webpack_require__(6)
-
-	commonUtil.renderBody(indexTpl)
-	commonUtil.render(document.getElementById('header'), headerTpl)
-	commonUtil.render(document.getElementById('footer'), footerTpl)
-
-
-/***/ }),
+/* 1 */,
+/* 2 */,
 /* 3 */
 /***/ (function(module, exports) {
 
@@ -89,12 +62,7 @@
 	module.exports = "<div>	<ul>		<li>品牌故事</li>|		<li>客户服务</li>|		<li class=\"yo-ico\">&#xe60b;</li>|		<li class=\"yo-ico\">&#xe60a;</li>|		<li class=\"yo-ico\">&#xe618;</li>	</ul></div>"
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>    <div class=\"log-msg\">    	<h3>会员登录</h3>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"邮箱/手机\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"密码\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div id=\"rember\">    		<div class=\"left\">    			<i class=\"yo-ico\"></i>    			<span>记住我</span>    		</div>    		<a href=\"###\">忘记密码</a>    	</div>    	<div class=\"btn-login\">    		立即登录    	</div>    </div>				<div class=\"reg-box\">			<h3>会员注册</h3>			<p>注册成为UA官网会员即可:</p>			<ul>				<li>第一时间获得我们的最新产品和活动资讯</li>				<li>享有更全面的售后服务</li>				<li>有机会参与我们的会员回馈活动</li>			</ul>		</div>		<div id=\"reg-im\">立即注册</div>		<div class=\"page-bottom\">			<div class=\"i-box\">				<i class=\"yo-ico\">&#xe64e;</i>&nbsp;&nbsp;				<i class=\"yo-ico\">&#xe6f2;</i>			</div>		</div>  </section>  <div id=\"footer\"></div></div>"
-
-/***/ }),
+/* 5 */,
 /* 6 */
 /***/ (function(module, exports) {
 
@@ -114,6 +82,41 @@
 	module.exports = common
 
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+
+
+	__webpack_require__(8)
+
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+
+
+	var headerTpl = __webpack_require__(3)
+	var footerTpl = __webpack_require__(4)
+	var indexTpl = __webpack_require__(9)
+
+	var commonUtil = __webpack_require__(6)
+
+	commonUtil.renderBody(indexTpl)
+	commonUtil.render(document.getElementById('header'), headerTpl)
+	commonUtil.render(document.getElementById('footer'), footerTpl)
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>    <div class=\"log-msg\">    	<h3>会员登录</h3>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"邮箱/手机\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"密码\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div id=\"rember\">    		<div class=\"left\">    			<i class=\"yo-ico\"></i>    			<span>记住我</span>    		</div>    		<a href=\"###\">忘记密码</a>    	</div>    	<div class=\"btn-login\">    		立即登录    	</div>    </div>				<div class=\"reg-box\">			<h3>会员注册</h3>			<p>注册成为UA官网会员即可:</p>			<ul>				<li>第一时间获得我们的最新产品和活动资讯</li>				<li>享有更全面的售后服务</li>				<li>有机会参与我们的会员回馈活动</li>			</ul>		</div>		<div id=\"reg-im\">立即注册</div>		<div class=\"page-bottom\">			<div class=\"i-box\">				<i class=\"yo-ico\">&#xe64e;</i>&nbsp;&nbsp;				<i class=\"yo-ico\">&#xe6f2;</i>			</div>		</div>  </section>  <div id=\"footer\"></div></div>"
 
 /***/ })
 /******/ ]);

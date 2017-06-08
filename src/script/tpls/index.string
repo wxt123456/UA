@@ -1,0 +1,49 @@
+<div class="m-index">
+  <div id="header"></div>
+  <section>
+   	<div class="lunbo">
+		
+   	</div>
+   	<article class="box-content">
+		<div class="new-product">
+			<p>UA春夏装备全新上市</p>
+			<h3>
+				<span>我们潜心改良装备&nbsp;&nbsp;&nbsp;让你专注提升表现</span>
+			</h3>
+			<div class="product-btn">
+				<a href="#">男子新品</a>
+				<a href="#">女子新品</a>
+				<a href="#">男童新品</a>
+				<a href="#">女童新品</a>
+			</div>
+		</div>
+	</article>
+	<ul class="floor-box">
+		<li class="floor">
+			<div class="img">
+				<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/HP-2-1-20170605.jpg" alt="">
+			</div>
+			<h3>健身利器 贴身伴侣</h3>
+			<p>THREADBORNE ¾ UTILITY T恤</p>
+			<span>立即购买</span>
+		</li>
+		
+		<li class="floor">
+			<div class="img">
+				<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/HP-2-2_20170420.jpg" alt="">
+			</div>
+			<h3>在训练中 打造全新的自己</h3>
+			<p>女子训练装备</p>
+			<span>立即购买</span>
+		</li>
+		<li class="floor">
+			<div class="img">
+				<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/banner/CURRY3ZERO-20170523/banner-3gm-20170523.jpg" alt="">
+			</div>
+			<h3>CURRY 3ZERO篮球鞋</h3>
+			<span>了解更多</span>
+		</li>
+	</ul>
+  </section>
+  <div id="footer"></div>
+</div>
