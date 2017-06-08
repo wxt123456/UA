@@ -802,6 +802,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+    #footer div ul .yo-ico {
+      font-size: .2rem; }
 
 @font-face {
   font-family: 'yofont';
