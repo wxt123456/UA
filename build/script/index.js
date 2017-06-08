@@ -44,12 +44,39 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(7);
+	module.exports = __webpack_require__(1);
 
 
 /***/ }),
-/* 1 */,
-/* 2 */,
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+
+
+	__webpack_require__(2)
+
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+
+
+	var headerTpl = __webpack_require__(3)
+	var footerTpl = __webpack_require__(4)
+	var indexTpl = __webpack_require__(5)
+
+	var commonUtil = __webpack_require__(6)
+
+	commonUtil.renderBody(indexTpl)
+	commonUtil.render(document.getElementById('header'), headerTpl)
+	commonUtil.render(document.getElementById('footer'), footerTpl)
+
+
+/***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
@@ -62,7 +89,12 @@
 	module.exports = "<div></div>"
 
 /***/ }),
-/* 5 */,
+/* 5 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>   	<div class=\"lunbo\">		   	</div>   	<article class=\"box-content\">		<div class=\"new-product\">			<p>UA春夏装备全新上市</p>			<h3>				<span>我们潜心改良装备&nbsp;&nbsp;&nbsp;让你专注提升表现</span>			</h3>			<div class=\"product-btn\">				<a href=\"#\">男子新品</a>				<a href=\"#\">女子新品</a>				<a href=\"#\">男童新品</a>				<a href=\"#\">女童新品</a>			</div>		</div>	</article>	<ul class=\"floor-box\">		<li class=\"floor\">			<div class=\"img\">				<img src=\"https://resource.underarmour.cn/resources/images/BannerPic/homepage/HP-2-1-20170605.jpg\" alt=\"\">			</div>			<h3>健身利器 贴身伴侣</h3>			<p>THREADBORNE ¾ UTILITY T恤</p>			<span>立即购买</span>		</li>				<li class=\"floor\">			<div class=\"img\">				<img src=\"https://resource.underarmour.cn/resources/images/BannerPic/homepage/HP-2-2_20170420.jpg\" alt=\"\">			</div>			<h3>在训练中 打造全新的自己</h3>			<p>女子训练装备</p>			<span>立即购买</span>		</li>		<li class=\"floor\">			<div class=\"img\">				<img src=\"https://resource.underarmour.cn/resources/images/BannerPic/homepage/banner/CURRY3ZERO-20170523/banner-3gm-20170523.jpg\" alt=\"\">			</div>			<h3>CURRY 3ZERO篮球鞋</h3>			<span>了解更多</span>		</li>	</ul>  </section>  <div id=\"footer\"></div></div>"
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
@@ -82,41 +114,6 @@
 	module.exports = common
 
 
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-
-
-	__webpack_require__(8)
-
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-
-
-	var headerTpl = __webpack_require__(3)
-	var footerTpl = __webpack_require__(4)
-	var indexTpl = __webpack_require__(9)
-
-	var commonUtil = __webpack_require__(6)
-
-	commonUtil.renderBody(indexTpl)
-	commonUtil.render(document.getElementById('header'), headerTpl)
-	commonUtil.render(document.getElementById('footer'), footerTpl)
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>    <div class=\"log-msg\">    	<h3>会员登录</h3>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"邮箱/手机\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"密码\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div id=\"rember\">    		<div class=\"left\">    			<i class=\"yo-ico\"></i>    			<span>记住我</span>    		</div>    		<a href=\"###\">忘记密码</a>    	</div>    	<div class=\"btn-login\">    		立即登录    	</div>    </div>				<div class=\"reg-box\">			<h3>会员注册</h3>			<p>注册成为UA官网会员即可:</p>			<ul>				<li>第一时间获得我们的最新产品和活动资讯</li>				<li>享有更全面的售后服务</li>				<li>有机会参与我们的会员回馈活动</li>			</ul>		</div>		<div id=\"reg-im\">立即注册</div>		<div class=\"page-bottom\">			<div class=\"i-box\">				<i class=\"yo-ico\">&#xe64e;</i>&nbsp;&nbsp;				<i class=\"yo-ico\">&#xe6f2;</i>			</div>		</div>  </section>  <div id=\"footer\"></div></div>"
 
 /***/ })
 /******/ ]);
