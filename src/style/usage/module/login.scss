@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+.m-index {
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  background: #fff;
+  section {
+    @include flex(1);
+    width: 90%;
+    overflow-y: scroll;
+    align-self: center;
+        h3{
+            font-size: .18rem;
+            font-weight: 500;
+            line-height: .6rem;
+            color:#000000;
+            text-align: center;
+        }
+        .form-box{
+            align-self: center;
+            height:.39rem;
+            margin-bottom: .1rem;
+            .form-input{
+                height:100%;
+                input{
+                    width:100%;
+                    padding: .09rem .12rem;
+                    color: #1d1d1d;
+                    @include border(1px ,#c7c7c7);
+                }
+            }
+        }
+        #rember{
+            margin-top: .04rem;
+            font-size: .12rem;
+            line-height: .16rem;
+            width: 100%;
+            margin-bottom: .2rem;
+            align-content: space-between;
+            .left{
+                display: inline-flex;
+//              align-self: flex-start;
+                line-height: .16rem;
+            }
+            a{
+                line-height: .16rem;
+//              display: inline-flex;
+                align-self: flex-end;
+                text-decoration: underline;
+                color: #1D1D1D;
+            }
+        }
+        
+        .btn-login{
+            width: 100%;
+            height: .48rem;
+            color:#fff;
+            line-height: .48rem;
+            background: #ea212e;
+            text-align: center;
+        }
+      .reg-box{
+          margin-top: .2rem;
+          @include border(5px 0 0 0, #f5f5f5);
+          h3{
+            font-size: .18rem;
+            font-weight: 500;
+            line-height: .6rem;
+            color:#000000;
+            text-align: left;
+            }
+          p{
+              font-size: .12rem;
+              margin-bottom: .14rem;
+          }
+          ul{
+              font-size: .12rem;
+              line-height: .16rem;
+              margin-bottom: .1rem;
+          }
+      }
+      #reg-im{
+        width: 99%;
+        height: .48rem;
+        color:#1D1D1D;
+        line-height: .48rem;
+        background: #fff;
+        text-align: center;
+        @include border(1px, #000);
+      }
+      .page-bottom{
+          margin-top: .3rem;
+          padding-top:.3rem ;
+          .i-box{
+              color:red;
+              text-align: center;
+              font-size: .36rem;
+          }
+      }
+  }
+}

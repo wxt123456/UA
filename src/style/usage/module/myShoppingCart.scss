@@ -1,0 +1,64 @@
+.m-index{
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    section{      
+       flex: 1;
+       overflow: scroll;
+        .box1{
+            height:2.17rem;
+            width: 100%;
+            padding:.46rem 0 .58rem 0;
+            text-align: center;
+            i{
+                font-size: .7rem;
+                color: #999;
+                margin:.2rem 0;
+            }
+        }
+        .box2{
+            width: 100%;
+            @include border(1px 0 0 0,#dcdcdc);
+            div{
+                padding: 25px 0 10px;
+                font-size: .18rem;
+                text-align: center;
+            }
+            ul{
+                @include flexbox()
+                flex-wrap: wrap;
+                justify-content: space-between;
+                >li{
+                    padding: .08rem;
+                    width: 45%;
+                    text-align: center;
+                    img{width: 90%;}
+                    ol{
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            border: 1px solid #999;
+                            width: 20%;
+                            height: .15rem;
+                            line-height: .06rem;
+                            text-align: center;
+                        }
+                        li:nth-child(1){
+                            background: red;
+                        }
+                        li:nth-child(2){
+                            background: blue;
+                        }
+                        li:nth-child(3){
+                            background: black;
+                        }
+                    }
+                    p{font-size: .12rem;}
+                }
+            }
+        }
+    }
+   
+
+
+}
