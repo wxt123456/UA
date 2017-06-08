@@ -33,8 +33,7 @@ gulp.task('webserver',function(){
 					enable:true,
 					path:'./build'
 				},
-				livereload:true
-			/*	,
+				livereload:true,
 				middleware:[
 					//反向代理
 					proxy('/mock',{
@@ -43,7 +42,7 @@ gulp.task('webserver',function(){
 							''
 						}
 					})
-				]*/
+				]
 			})
 		)
 })
