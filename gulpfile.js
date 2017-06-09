@@ -43,8 +43,7 @@ gulp.task('webserver',function(){
 				directoryListing:{
 					enable:true,
 					path:'./dev'
-				}
-				/*,
+				},
 				livereload: true,
 		        middleware: [
 		          // 反向代理
@@ -62,7 +61,7 @@ gulp.task('webserver',function(){
 		              '^/api': ''
 		            }
 		          })
-		        ]*/
+		        ]
 			})
 		)
 })
