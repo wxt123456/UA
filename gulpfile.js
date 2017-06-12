@@ -48,14 +48,14 @@ gulp.task('webserver',function(){
 		        middleware: [
 		          // 反向代理
 		          proxy('/mock', {
-		            target: 'http://localhost:8000/',
+		            target: 'http://localhost:9000/',
 		            changeOrigin: true,
 		            pathRewrite: {
 		              '^/mock': ''
 		            }
 		          }),
 		          proxy('/api', {
-		            target: 'https://m.lagou.com/',
+		            target: 'http://www.adidas.com.cn/',
 		            changeOrigin: true,
 		            pathRewrite: {
 		              '^/api': ''

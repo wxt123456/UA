@@ -1,13 +1,25 @@
 
-var indexTpl=require('../tpls/myShoppingCart.string')
+var indexTpl=require('../tpls/details.string')
 var headerTpl=require('../tpls/header.string')
 var footerTpl=require('../tpls/footer.string')
 var commonUtil=require('../utils/common')
-
+var footer1Tpl = require('../tpls/footer1.string')
 
 commonUtil.renderBody(indexTpl)
 commonUtil.render(document.getElementById("header"),headerTpl)
 commonUtil.render(document.getElementById("footer"),footerTpl)
+commonUtil.render(document.getElementById('footer1'), footer1Tpl)
+
+
+var myswiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: false ,
+    autoplay:2500,
+    speed:2500,
+    freeMode : true,
+    pagination: '.swiper-pagination'
+})         
+
 
 $.ajax({
 	url:'/api/specific/ajaxproductlist/productlist/?p=3&id=2&cat=724&sport_gender=39&order=entity_id&dir=desc',

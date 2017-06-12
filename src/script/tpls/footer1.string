@@ -1,0 +1,10 @@
+<div>
+	<header>
+		<p class="yo-ico">&#xe64e;</p>
+		<p class="yo-ico">&#xe6f2;</p>
+	</header>
+	<footer>
+		<input type="text" placeholder="输入邮箱订阅UA最新电子资讯"/>
+		<button>订阅</button>
+	</footer>
+</div>

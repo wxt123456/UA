@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.m-index{
+    height: 100%;
+    background: #fff;
+    @include flexbox();
+    @include flex-direction(column);
+    section{      
+    	overflow: scroll;
+		article{
+			padding:.2rem .2rem .15rem ;
+			@include flexbox();
+			@include justify-content(space-between)
+			p{
+				font-size: .16rem;
+			}
+			span{
+				font-size: .12rem;
+			}
+		}
+		aside{
+			padding:.2rem .2rem 0 ;
+			@include flexbox();
+			@include justify-content(space-between)
+			p{
+				width: 45%;
+				background: #eee;
+				padding: .08rem;
+				@include flexbox();
+				@include justify-content(space-between)
+				font-size: .12rem;
+				span{
+					color: #999;
+				}
+			}
+			
+		}
+		ul{
+            @include flexbox();
+            padding:.2rem .2rem .15rem ;
+            flex-wrap: wrap;
+            @include justify-content(space-between);
+            >li{
+                padding: .08rem;
+                width: 45%;
+                text-align: center;
+                img{width: 100%;}
+                article{
+                	padding: 0;
+                	justify-content: center;
+                	color: #999;
+                }
+                p{
+                    font-size: .12rem;
+                    @include ellipsis(null,1);
+                }
+            }
+        }
+        div{
+        	width: 100%;
+        	padding: 0 .12rem .2rem;
+        	font-size: .14rem;
+        	line-height: .15rem;
+        }
+    }
+}

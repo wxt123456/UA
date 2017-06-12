@@ -44,7 +44,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(14);
+	module.exports = __webpack_require__(8);
 
 
 /***/ }),
@@ -83,25 +83,24 @@
 
 
 /***/ }),
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
+/* 7 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div>	<header>		<p class=\"yo-ico\">&#xe64e;</p>		<p class=\"yo-ico\">&#xe6f2;</p>	</header>	<footer>		<input type=\"text\" placeholder=\"输入邮箱订阅UA最新电子资讯\"/>		<button>订阅</button>	</footer></div>"
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 
 
-	__webpack_require__(15)
+	__webpack_require__(9)
 
 
 
 /***/ }),
-/* 15 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -109,20 +108,40 @@
 
 	var headerTpl = __webpack_require__(4)
 	var footerTpl = __webpack_require__(5)
-	var indexTpl = __webpack_require__(16)
-
+	var indexTpl = __webpack_require__(10)
+	var footer1Tpl = __webpack_require__(7)
 	var commonUtil = __webpack_require__(6)
 
 	commonUtil.renderBody(indexTpl)
 	commonUtil.render(document.getElementById('header'), headerTpl)
 	commonUtil.render(document.getElementById('footer'), footerTpl)
+	commonUtil.render(document.getElementById('footer1'), footer1Tpl)
+
+	$.ajax({
+		url:'/api/specific/ajaxproductlist/productlist/?p=3&id=2&cat=724&sport_gender=39&order=entity_id&dir=desc',
+		success:function(res){
+			var str=''
+			res=JSON.parse(res)
+			var dateSource=res.info
+			for(var i=0;i<dateSource.length;i++){
+				str+='	<li>\
+							<img src="'+dateSource[i].img+'" />\
+							<article>'+dateSource[i].colors+'</article>\
+							<p>'+dateSource[i].name+'</p>\
+							<span>'+dateSource[i].price+'</span>\
+						</li>'
+			}
+			$('.m-index section ul').html(str)
+		}
+	})
+
 
 
 /***/ }),
-/* 16 */
+/* 10 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>    <div class=\"log-msg\">    	<h3>会员登录</h3>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"邮箱/手机\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div class=\"form-box\">    		<div class=\"form-input\">    			<input type=\"text\" placeholder=\"密码\">    		</div>    		<span class=\"msg-tip\"></span>    	</div>    	<div id=\"rember\">    		<div class=\"left\">    			<i class=\"yo-ico\"></i>    			<span>记住我</span>    		</div>    		<a href=\"###\">忘记密码</a>    	</div>    	<div class=\"btn-login\">    		立即登录    	</div>    </div>				<div class=\"reg-box\">			<h3>会员注册</h3>			<p>注册成为UA官网会员即可:</p>			<ul>				<li>第一时间获得我们的最新产品和活动资讯</li>				<li>享有更全面的售后服务</li>				<li>有机会参与我们的会员回馈活动</li>			</ul>		</div>		<div id=\"reg-im\">立即注册</div>		<div class=\"page-bottom\">			<div class=\"i-box\">				<i class=\"yo-ico\">&#xe64e;</i>&nbsp;&nbsp;				<i class=\"yo-ico\">&#xe6f2;</i>			</div>		</div>  </section>  <div id=\"footer\"></div></div>"
+	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>   	<article>   		<p>男子新品推荐</p>   		<span>共157件</span>   	</article>   	<aside>   		<p class=\"p1\">筛选<span class=\"yo-ico\">&#xe622;</span></p>   		<p class=\"p2\">默认排序<span class=\"yo-ico\">&#xe659;</span></p>   	</aside>		<ul>						</ul>		<div>			UA（安德玛）男子新品推荐系列产品，包含男士印花短袖，男士库里篮球鞋，男士强力伸缩裤等男士运动装备，购买专业男士运动装备，就在Under Armour中国官网。 		</div>  <div id=\"footer1\"></div>  </section>  <div id=\"footer\"></div></div>"
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,21 @@
+<div class="m-index">
+  <div id="header"></div>
+  <section>
+   	<article>
+   		<p>男子新品推荐</p>
+   		<span>共157件</span>
+   	</article>
+   	<aside>
+   		<p class="p1">筛选<span class="yo-ico">&#xe622;</span></p>
+   		<p class="p2">默认排序<span class="yo-ico">&#xe659;</span></p>
+   	</aside>
+		<ul>
+				
+		</ul>
+		<div>
+			UA（安德玛）男子新品推荐系列产品，包含男士印花短袖，男士库里篮球鞋，男士强力伸缩裤等男士运动装备，购买专业男士运动装备，就在Under Armour中国官网。 
+		</div>
+  <div id="footer1"></div>
+  </section>
+  <div id="footer"></div>
+</div>

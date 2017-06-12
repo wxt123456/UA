@@ -44,25 +44,25 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(17);
 
 
 /***/ }),
 /* 1 */,
 /* 2 */,
-/* 3 */
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports) {
 
 	module.exports = "<header>	<ul>		<li class=\"yo-ico\">&#xe613;</li>		<li class=\"yo-ico\">&#xe656;</li>		<li>			<a href=\"\">				<img src=\"//resource.underarmour.cn/images/common/logo@2x.jpg\"/>			</a>		</li>		<li class=\"yo-ico\">&#xe606;</li>		<li class=\"yo-ico\">&#xe600;</li>	</ul></header>"
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div>	<ul>		<li>品牌故事</li>|		<li>客户服务</li>|		<li class=\"yo-ico\">&#xe60b;</li>|		<li class=\"yo-ico\">&#xe60a;</li>|		<li class=\"yo-ico\">&#xe618;</li>	</ul></div>"
 
 /***/ }),
-/* 5 */,
 /* 6 */
 /***/ (function(module, exports) {
 
@@ -71,8 +71,7 @@
 
 	var common = {
 	  renderBody: function (tpl) {
-	    var body = document.body
-	    body.innerHTML = tpl + body.innerHTML
+	    $('body').prepend(tpl)
 	  },
 	  render: function (obj, tpl) {
 	    obj.innerHTML = tpl
@@ -87,26 +86,33 @@
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 
 
-	__webpack_require__(11)
+	__webpack_require__(18)
 
 
 /***/ }),
-/* 11 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 
 
 
-	var indexTpl=__webpack_require__(12)
-	var headerTpl=__webpack_require__(3)
-	var footerTpl=__webpack_require__(4)
+	var indexTpl=__webpack_require__(19)
+	var headerTpl=__webpack_require__(4)
+	var footerTpl=__webpack_require__(5)
 	var commonUtil=__webpack_require__(6)
 
 
@@ -114,13 +120,31 @@
 	commonUtil.render(document.getElementById("header"),headerTpl)
 	commonUtil.render(document.getElementById("footer"),footerTpl)
 
+	$.ajax({
+		url:'/api/specific/ajaxproductlist/productlist/?p=3&id=2&cat=724&sport_gender=39&order=entity_id&dir=desc',
+		success:function(res){
+			var str=''
+			res=JSON.parse(res)
+			var dateSource=res.info
+			for(var i=0;i<dateSource.length;i++){
+				str+='	<li>\
+							<img src="'+dateSource[i].img+'" />\
+							<article>'+dateSource[i].colors+'</article>\
+							<p>'+dateSource[i].name+'</p>\
+							<span>'+dateSource[i].price+'</span>\
+						</li>'
+			}
+				$('.m-index section ul').html(str)
+		}
+	})
+
 
 
 /***/ }),
-/* 12 */
+/* 19 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"m-index\">	<header id=\"header\"></header>	<section>		<div class=\"box1\">			<p>您的购物车中没有商品</p>			<i class=\"yo-ico\">&#xe629;</i>		</div>		<div class=\"box2\">			<div>				猜你会喜欢			</div>			<ul>				<li>					<img src=\"//resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png\" />					<ol>						<li></li>						<li></li>						<li></li>						<li>...</li>					</ol>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</li>				<li>					<img src=\"//resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png\" />					<ol>						<li></li>						<li></li>						<li></li>						<li>...</li>					</ol>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</li>				<li>					<img src=\"//resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png\" />					<ol>						<li></li>						<li></li>						<li></li>						<li>...</li>					</ol>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</li>				<li>					<img src=\"//resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png\" />					<ol>						<li></li>						<li></li>						<li></li>						<li>...</li>					</ol>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</li>				<li>					<img src=\"//resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png\" />					<ol>						<li></li>						<li></li>						<li></li>						<li>...</li>					</ol>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</li>				<li>					<img src=\"//resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png\" />					<ol>						<li></li>						<li></li>						<li></li>						<li>...</li>					</ol>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</li>			</ul>		</div>	</section>	<footer id=\"footer\"></footer></div>"
+	module.exports = "<div class=\"m-index\">	<header id=\"header\"></header>	<section>		<div class=\"box1\">			<p>您的购物车中没有商品</p>			<i class=\"yo-ico\">&#xe629;</i>		</div>		<div class=\"box2\">			<div>				猜你会喜欢			</div>			<ul>							</ul>		</div>	</section>	<footer id=\"footer\"></footer></div>"
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,40 @@
+
+#footer1{
+    div{
+      height: 1.3rem;
+      padding: .5rem 0 0;
+      @include border(1px 0 0 0,#dcdcdc);
+      header{
+          @include flexbox();
+          padding: 0 25%;
+          @include justify-content(space-around);
+          font-size:.36rem ;
+          color: red;
+          margin-bottom: .3rem;
+      }
+      footer{
+          margin-top: .15rem;
+          overflow: hidden;
+          input{
+              height:.4rem ;
+              box-sizing: border-box;
+              width: 60%;
+              float: left;
+              padding: .1rem;
+              font-size: .12rem;
+              text-align:center;
+              margin-left: 10%;
+          }
+          button{
+              float: left;
+              border: none;
+              width: 20%;
+              height: .4rem;
+              color: #fff;
+              font-size: .14rem;
+              background:#1d1d1d ;
+          }
+      }
+    }
+  
+}

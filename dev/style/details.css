@@ -829,88 +829,23 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  flex-direction: column;
-  background: #fff; }
+  flex-direction: column; }
   .m-index section {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
     flex: 1;
-    width: .1px;
-    width: 90%;
-    overflow-y: scroll;
-    align-self: center; }
-    .m-index section h3 {
-      font-size: .18rem;
-      font-weight: 500;
-      line-height: .6rem;
-      color: #000000;
-      text-align: center; }
-    .m-index section .form-box {
-      align-self: center;
-      height: .39rem;
-      margin-bottom: .1rem; }
-      .m-index section .form-box .form-input {
-        height: 100%; }
-        .m-index section .form-box .form-input input {
-          width: 100%;
-          padding: .09rem .12rem;
-          color: #1d1d1d;
-          position: relative; }
-          .m-index section .form-box .form-input input::after {
-            pointer-events: none;
-            position: absolute;
-            z-index: 999;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            content: "\0020";
-            border-color: #c7c7c7;
-            border-style: solid;
-            border-width: 1px;
-            -webkit-transform-origin: 0 0;
-            transform-origin: 0 0; }
-            @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
-              .m-index section .form-box .form-input input::after {
-                width: 100%;
-                height: 100%; } }
-            @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
-              .m-index section .form-box .form-input input::after {
-                width: 200%;
-                height: 200%;
-                -webkit-transform: scale(0.5);
-                transform: scale(0.5); } }
-            @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
-              .m-index section .form-box .form-input input::after {
-                width: 300%;
-                height: 300%;
-                -webkit-transform: scale(0.33333);
-                transform: scale(0.33333); } }
-    .m-index section #rember {
-      margin-top: .04rem;
-      font-size: .12rem;
-      line-height: .16rem;
+    overflow: scroll; }
+    .m-index section .box1 {
+      height: 2.17rem;
       width: 100%;
-      margin-bottom: .2rem;
-      align-content: space-between; }
-      .m-index section #rember .left {
-        display: inline-flex;
-        line-height: .16rem; }
-      .m-index section #rember a {
-        line-height: .16rem;
-        align-self: flex-end;
-        text-decoration: underline;
-        color: #1D1D1D; }
-    .m-index section .btn-login {
-      width: 100%;
-      height: .48rem;
-      color: #fff;
-      line-height: .48rem;
-      background: #ea212e;
+      padding: .46rem 0 .58rem 0;
       text-align: center; }
-    .m-index section .reg-box {
-      margin-top: .2rem;
+      .m-index section .box1 i {
+        font-size: .7rem;
+        color: #999;
+        margin: .2rem 0; }
+    .m-index section .box2 {
+      width: 100%;
       position: relative; }
-      .m-index section .reg-box::after {
+      .m-index section .box2::after {
         pointer-events: none;
         position: absolute;
         z-index: 999;
@@ -918,81 +853,130 @@ a {
         left: 0;
         overflow: hidden;
         content: "\0020";
-        border-color: #f5f5f5;
+        border-color: #dcdcdc;
         border-style: solid;
-        border-width: 5px 0 0 0;
+        border-width: 1px 0 0 0;
         -webkit-transform-origin: 0 0;
         transform-origin: 0 0; }
         @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
-          .m-index section .reg-box::after {
+          .m-index section .box2::after {
             width: 100%;
             height: 100%; } }
         @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
-          .m-index section .reg-box::after {
+          .m-index section .box2::after {
             width: 200%;
             height: 200%;
             -webkit-transform: scale(0.5);
             transform: scale(0.5); } }
         @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
-          .m-index section .reg-box::after {
+          .m-index section .box2::after {
             width: 300%;
             height: 300%;
             -webkit-transform: scale(0.33333);
             transform: scale(0.33333); } }
-      .m-index section .reg-box h3 {
+      .m-index section .box2 div {
+        padding: 25px 0 10px;
         font-size: .18rem;
-        font-weight: 500;
-        line-height: .6rem;
-        color: #000000;
-        text-align: left; }
-      .m-index section .reg-box p {
-        font-size: .12rem;
-        margin-bottom: .14rem; }
-      .m-index section .reg-box ul {
-        font-size: .12rem;
-        line-height: .16rem;
-        margin-bottom: .1rem; }
-    .m-index section #reg-im {
-      width: 99%;
-      height: .48rem;
-      color: #1D1D1D;
-      line-height: .48rem;
-      background: #fff;
+        text-align: center; }
+      .m-index section .box2 ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+        .m-index section .box2 ul > li {
+          padding: .08rem;
+          width: 45%;
+          text-align: center; }
+          .m-index section .box2 ul > li img {
+            width: 90%; }
+          .m-index section .box2 ul > li ol {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between; }
+            .m-index section .box2 ul > li ol li {
+              border: 1px solid #999;
+              width: 20%;
+              height: .15rem;
+              line-height: .06rem;
+              text-align: center; }
+            .m-index section .box2 ul > li ol li:nth-child(1) {
+              background: red; }
+            .m-index section .box2 ul > li ol li:nth-child(2) {
+              background: blue; }
+            .m-index section .box2 ul > li ol li:nth-child(3) {
+              background: black; }
+          .m-index section .box2 ul > li p {
+            font-size: .12rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+
+#footer1 div {
+  height: 1.3rem;
+  padding: .5rem 0 0;
+  position: relative; }
+  #footer1 div::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #footer1 div::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #footer1 div::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #footer1 div::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+  #footer1 div header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 25%;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    font-size: .36rem;
+    color: red;
+    margin-bottom: .3rem; }
+  #footer1 div footer {
+    margin-top: .15rem;
+    overflow: hidden; }
+    #footer1 div footer input {
+      height: .4rem;
+      box-sizing: border-box;
+      width: 60%;
+      float: left;
+      padding: .1rem;
+      font-size: .12rem;
       text-align: center;
-      position: relative; }
-      .m-index section #reg-im::after {
-        pointer-events: none;
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        content: "\0020";
-        border-color: #000;
-        border-style: solid;
-        border-width: 1px;
-        -webkit-transform-origin: 0 0;
-        transform-origin: 0 0; }
-        @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
-          .m-index section #reg-im::after {
-            width: 100%;
-            height: 100%; } }
-        @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
-          .m-index section #reg-im::after {
-            width: 200%;
-            height: 200%;
-            -webkit-transform: scale(0.5);
-            transform: scale(0.5); } }
-        @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
-          .m-index section #reg-im::after {
-            width: 300%;
-            height: 300%;
-            -webkit-transform: scale(0.33333);
-            transform: scale(0.33333); } }
-    .m-index section .page-bottom {
-      margin-top: .3rem;
-      padding-top: .3rem; }
-      .m-index section .page-bottom .i-box {
-        color: red;
-        text-align: center;
-        font-size: .36rem; }
+      margin-left: 10%; }
+    #footer1 div footer button {
+      float: left;
+      border: none;
+      width: 20%;
+      height: .4rem;
+      color: #fff;
+      font-size: .14rem;
+      background: #1d1d1d; }

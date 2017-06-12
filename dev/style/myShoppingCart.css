@@ -770,6 +770,8 @@ a {
         display: -webkit-flex;
         display: flex;
         flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
         justify-content: space-between; }
         .m-index section .box2 ul > li {
           padding: .08rem;
@@ -778,7 +780,11 @@ a {
           .m-index section .box2 ul > li img {
             width: 90%; }
           .m-index section .box2 ul > li ol {
+            display: -webkit-box;
+            display: -webkit-flex;
             display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
             justify-content: space-between; }
             .m-index section .box2 ul > li ol li {
               border: 1px solid #999;
@@ -793,7 +799,10 @@ a {
             .m-index section .box2 ul > li ol li:nth-child(3) {
               background: black; }
           .m-index section .box2 ul > li p {
-            font-size: .12rem; }
+            font-size: .12rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
 
 #header {
   background: #fff;
@@ -903,3 +912,7 @@ a {
 @font-face {
   font-family: 'yofont';
   src: url("/images/iconfont/iconfont2.woff") format("woff"), url("/images/iconfont/iconfont2.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'yofont';
+  src: url("/images/iconfont/iconfont4.woff") format("woff"), url("/images/iconfont/iconfont4.ttf") format("truetype"); }

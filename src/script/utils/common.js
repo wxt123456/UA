@@ -1,7 +1,6 @@
 var common = {
   renderBody: function (tpl) {
-    var body = document.body
-    body.innerHTML = tpl + body.innerHTML
+    $('body').prepend(tpl)
   },
   render: function (obj, tpl) {
     obj.innerHTML = tpl

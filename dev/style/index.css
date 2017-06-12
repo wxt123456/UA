@@ -817,6 +817,10 @@ a {
   font-family: 'yofont';
   src: url("/images/iconfont/iconfont2.woff") format("woff"), url("/images/iconfont/iconfont2.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'yofont';
+  src: url("/images/iconfont/iconfont4.woff") format("woff"), url("/images/iconfont/iconfont4.ttf") format("truetype"); }
+
 .m-index {
   height: 100%;
   display: -webkit-box;
