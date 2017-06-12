@@ -1,0 +1,36 @@
+<div class="search-content">
+	<div class="search-bar">
+		<form action="" method="psot">
+			<input type="text" placeholder="搜素" id="search-input">
+			<span id="failback">取消</span>
+		</form>
+		<div class="search-hot">
+			<h4>热门搜索</h4>
+			<ul id="hot-content">
+				<li>Supervent科技</li>
+				<li>女士Fly By</li>
+				<li>Threadborne科技</li>
+				<li>CoolSwitch科技</li>
+				<li>全新功能跑鞋</li>
+			</ul>
+		</div>
+		<div class="search-hot  history2">
+			<script id="historyTel" type="text/html">
+				<h4>搜素历史</h4>
+			
+				<ul id="history">
+
+				{{each list as value index}}
+					<li>{{value}}</li>
+				{{/each}}
+
+
+				</ul>
+			</script>
+			
+		</div>
+		<div class="search-clear">
+			清除搜素历史
+		</div>
+	</div>
+</div>

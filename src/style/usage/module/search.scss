@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.search-content{
+	padding:.3rem;
+	height:100%;
+	background: #fff;
+	input{
+	    height: .4rem;
+	    line-height: .4rem;
+	    padding: .1rem .1rem .1rem .38rem;
+	    background: #FDFDFD;
+	    border-color: #979797;
+	    font-size: .14rem;
+	    width: 80%;
+	}
+	#failback{
+		padding-left: 2%;
+		font-size: .16rem;
+		color:#6f6f6f;
+		line-height: .4rem;
+	}
+	.search-hot{
+		margin-top: .45rem;
+
+		ul{
+			@include flexbox();
+			 flex-wrap:wrap;
+			
+		}
+		 li{
+			 	padding: 0 .1rem;
+			 	@include border(1px ,#dadada);
+			 	line-height: .34rem;
+			 	text-align: center;
+			 	margin: 0 0 8px 5px;
+			 }
+	}
+
+		h4{
+			font-weight: normal;
+			line-height: .36rem;
+		}
+
+	.search-clear{
+		width: 100%;
+	    text-align: center;
+	    margin-top: .12rem;
+	    font-size: .12rem;
+	    color: #7c7c7c;
+	}
+}
