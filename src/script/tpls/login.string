@@ -1,48 +1,137 @@
 <div class="m-index">
   <div id="header"></div>
   <section>
-    <div class="log-msg">
-    	<h3>会员登录</h3>
-    	<div class="form-box">
-    		<div class="form-input">
-    			<input type="text" placeholder="邮箱/手机">
-    		</div>
-    		<span class="msg-tip"></span>
-    	</div>
-    	<div class="form-box">
-    		<div class="form-input">
-    			<input type="text" placeholder="密码">
-    		</div>
-    		<span class="msg-tip"></span>
-    	</div>
-    	<div id="rember">
-    		<div class="left">
-    			<i class="yo-ico"></i>
-    			<span>记住我</span>
-    		</div>
-    		<a href="###">忘记密码</a>
-    	</div>
-    	<div class="btn-login">
-    		立即登录
-    	</div>
-    </div>
-		
-		<div class="reg-box">
-			<h3>会员注册</h3>
-			<p>注册成为UA官网会员即可:</p>
-			<ul>
-				<li>第一时间获得我们的最新产品和活动资讯</li>
-				<li>享有更全面的售后服务</li>
-				<li>有机会参与我们的会员回馈活动</li>
-			</ul>
-		</div>
-		<div id="reg-im">立即注册</div>
-		<div class="page-bottom">
-			<div class="i-box">
-				<i class="yo-ico">&#xe64e;</i>&nbsp;&nbsp;
-				<i class="yo-ico">&#xe6f2;</i>
-			</div>
-		</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <form action="" method="post" name="formUser">
+                    <div class="log-msg">
+                    	<h3>会员登录</h3>
+                    	<div class="form-box">
+                    		<div class="form-input">
+                    			<input type="text" placeholder="手机" id="mobile">
+                    		</div>
+                    		<span class="msg-tip"></span>
+                    	</div>
+                        <div class="form-box">
+                            <div class="form-input">
+                                <input type="text" placeholder="密码" id="pwd">
+                            </div>
+                            <span class="msg-tip"></span>
+                        </div>
+                    	<div class="form-box">
+                    		<div class="form-input yzm-box">
+                    			<input type="text" placeholder="验证码" id="zphone">
+                                <label for="zphone">获取手机验证码</label>
+                    		</div>
+                    		<span class="msg-tip"></span>
+                    	</div>
+                    	<div id="rember">
+                    		<div class="left">
+                    			<i class="yo-ico"></i>
+                    			<i class="yo-ico">&#xe646;</i>
+                                <i class="yo-ico isok">&#xe65d;</i>
+                                <span>记住我</span>
+                    		</div>
+                    		<a href="###">忘记密码</a>
+                    	</div>
+                    	<div class="btn-login">
+                    		立即登录
+                    	</div>
+                    </div>
+                  </form>
+            		<div class="reg-box">
+            			<h3>会员注册</h3>
+            			<p>注册成为UA官网会员即可:</p>
+            			<ul>
+            				<li>第一时间获得我们的最新产品和活动资讯</li>
+            				<li>享有更全面的售后服务</li>
+            				<li>有机会参与我们的会员回馈活动</li>
+            			</ul>
+            		</div>
+            		<div id="tap-reg" class="swiper-pagination">立即注册</div>
+            		<div class="page-bottom">
+            			<div class="i-box">
+            				<i class="yo-ico">&#xe64e;</i>&nbsp;&nbsp;
+            				<i class="yo-ico">&#xe6f2;</i>
+            			</div>
+            		</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="btn-login onon" id="tap-log">
+                        立即登录
+                    </div>
+                    <div class="show-bar"></div>
+                     <div class="log-msg">
+                        <h3>会员登录</h3>
+                          <form action="msg.php" method="post">
+                            <div class="form-box">
+                                <div class="form-input">
+                                    <p>邮箱</p>
+                                    <input type="text" placeholder="手机" id="reg-mobile">
+                                </div>
+                                <span class="msg-tip"></span>
+                            </div>
+                            <div class="form-box">
+                                <div class="form-input">
+                                    <p>手机号码</p>
+                                    <input type="text" placeholder="密码" id="pwd">
+                                </div>
+                                <span class="msg-tip"></span>
+                            </div>
+                            <div class="form-box">
+                                <div class="form-input">
+                                    <p>图片验证码</p>
+                                    <input type="text" placeholder="图片验证码" id="zimg">
+                                    <img src="" alt="">
+                                    <a href="##">换一张</a>
+                                </div>
+                                <span class="msg-tip"></span>
+                            </div>
+                            <div class="form-box">
+                                <div class="form-input" style="position: relative;">
+                                    <p>手机验证码</p>
+                                    <input type="text" placeholder="手机验证码" id="reg-zphone">
+                                    <label for="reg-zphone" id="reg-label">获取验证码</label>
+                                </div>
+                                <span class="msg-tip"></span>
+                            </div>
+                            <div class="form-box">
+                                <div class="form-input">
+                                    <p>密码</p>
+                                    <input type="text" placeholder="密码" id="reg-pwd" placeholder="8-16个字符，必须包含英文、数字、下划线中的两种">
+                                </div>
+                                <span class="msg-tip"></span>
+                            </div>
+                             <div class="form-box">
+                                <div class="form-input" id="gender">
+                                    <p>性别</p>
+                                    <div class="gender curt" id="man">男</div>
+                                    <div class="gender" id="woman">女</div>
+                                </div>
+                                <span class="msg-tip"></span>
+                            </div>
+                            <div id="agree-items">
+                                <p class="msg-ok">
+                                     <i class="yo-ico">&#xe646;</i>
+                                     <i class="yo-ico isok">&#xe65d;</i>
+                                    <span>我愿意接受来自UA中国官方商城的活动邮件</span>
+                                </p>
+                                <p class="msg-ok">
+                                    <i class="yo-ico">&#xe646;</i>
+                                     <i class="yo-ico isok">&#xe65d;</i>
+                                    <span>我已阅读并同意《《<a href="###">网站使用规则</a>》》</span>
+                                </p>
+                            </div>
+                            <div class="btn-login swiper-pagination" id="zhuce">
+                                立即注册
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
   </section>
   <div id="footer"></div>
 </div>

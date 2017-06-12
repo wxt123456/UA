@@ -27,7 +27,7 @@
 		       		</div>
 		        </div>
 		        <div class="swiper-slide">
-		        	<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/KV/KV-Threadborne-20170516/kv08-mob.jpg" alt="" />
+		        	<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/KV/KV-sling-20170608/sling-mob.jpg" alt="" />
 		       		<div class="scroll">
 		       			<h3>UA革新再创</h3>
 		       			<h4>更佳材质 更赞体感</h4>
@@ -84,6 +84,211 @@
 			<span>了解更多</span>
 		</li>
 	</ul>
+
+		<ul id="myTemplate">
+				<li>
+					<a href="void:javascript;" class="lv1">
+						新品推荐
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li>
+					<a href="void:javascript;" class="lv1">
+						热卖商品
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+
+				<li>
+					<a href="void:javascript;" class="lv1">
+						男子装备
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+
+				<li>
+					<a href="void:javascript;" class="lv1">
+						女子准备
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+
+				<li>
+					<a href="void:javascript;" class="lv1">
+						少年装备
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+
+				<li>
+					<a href="void:javascript;" class="lv1">
+						品牌故事
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+
+				<li>
+					<a href="void:javascript;" class="lv1">
+						新品推荐
+						<i class="yo-ico icon-gengduo">&#xe60c;</i>
+
+					</a>
+					<ul class="drop-list">
+						<li>
+							<a href="goodsList.html">
+								所有新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								男子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								女子新品推荐
+								<i></i>
+							</a>
+							<a href="goodsList.html">
+								三年新品推荐
+								<i></i>
+							</a>
+						</li>
+					</ul>
+					
+				</li>
+		</ul>
   </section>
   <div id="footer"></div>
-</div>
+</div> 
