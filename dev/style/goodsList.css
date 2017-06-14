@@ -825,6 +825,137 @@ a {
   font-family: 'yofont';
   src: url("/images/iconfont/iconfont4.woff") format("woff"), url("/images/iconfont/iconfont4.ttf") format("truetype"); }
 
+/**
+ * @module fragment
+ * @method yo-modal
+ * @version 3.0.0
+ * @description 构造yo-modal的自定义使用方法
+ * @demo http://ued.qunar.com/hy2/yo/demo/src/html/fragment/yo-modal.html
+ * @param {String} $name 定义扩展名称 <3.0.0>
+ * @param {Color} $bgcolor 遮罩背景色 <3.0.0>
+ * @param {Color} $cont-bgcolor 内容区背景色 <3.0.0>
+ */
+.yo-modal {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .yo-modal-top {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; }
+  .yo-modal-right {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end; }
+  .yo-modal-bottom {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end; }
+  .yo-modal-left {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start; }
+  .yo-modal-stretch-x > .cont {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px; }
+  .yo-modal-stretch-y > .cont {
+    -webkit-align-self: stretch;
+    align-self: stretch; }
+  .yo-modal-stretch > .cont {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    -webkit-align-self: stretch;
+    align-self: stretch; }
+  .yo-modal > .cont {
+    position: relative;
+    overflow: hidden; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module rotate
+ * @description 定义旋转动画
+ * @method rotate
+ */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotatez(0); }
+  to {
+    -webkit-transform: rotatez(360deg); } }
+
+@keyframes rotate {
+  from {
+    transform: rotatez(0); }
+  to {
+    transform: rotatez(360deg); } }
+
+.ani.rotate {
+  -webkit-animation-name: rotate;
+  animation-name: rotate; }
+
+/**
+ * @module element
+ * @method yo-loading
+ * @version 3.0.0
+ * @description 构造加载中的自定义使用方法
+ * @demo http://ued.qunar.com/hy2/yo/demo/src/html/element/yo-loading.html
+ * @param {String} $name 定义扩展名称 <3.0.0>
+ * @param {Length} $ico-size loading的尺寸 <3.0.0>
+ * @param {Color} $ico-color loading的颜色 <3.0.0>
+ * @param {Color} $bgcolor 背景色 <3.0.0>
+ * @param {Color} $color 文本颜色 <3.0.0>
+ * @param {Length} $font-size 文本字号 <3.0.0>
+ * @param {String} $content loading的iconfont编码 <3.0.0>
+ */
+.yo-loading {
+  padding: .1rem .2rem;
+  border-radius: .05rem;
+  color: #212121;
+  line-height: 1;
+  text-align: center; }
+  .yo-loading > .yo-ico {
+    display: block;
+    -webkit-animation: rotate 1s infinite linear;
+    animation: rotate 1s infinite linear;
+    -webkit-transform-origin: center;
+    transform-origin: center; }
+    .yo-loading > .yo-ico::before {
+      content: "";
+      color: #212121;
+      font-size: 0.5rem; }
+    .yo-loading > .yo-ico:not(:only-child) {
+      margin-bottom: .08rem; }
+
 .m-index {
   height: 100%;
   background: #fff;
@@ -836,7 +967,26 @@ a {
   -webkit-flex-direction: column;
   flex-direction: column; }
   .m-index section {
+    flex: 1;
+    position: relative;
     overflow: scroll; }
+    .m-index section .cont {
+      height: 100%; }
+      .m-index section .cont .yo-loading {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        text-align: center; }
+        .m-index section .cont .yo-loading .yo-ico {
+          transform-origin: 50% 0;
+          position: absolute;
+          top: 30%;
+          left: 40%;
+          display: block;
+          height: .5rem;
+          width: .5rem; }
+        .m-index section .cont .yo-loading .text {
+          margin-top: 85%; }
     .m-index section article {
       padding: .2rem .2rem .15rem;
       display: -webkit-box;

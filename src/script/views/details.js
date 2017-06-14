@@ -13,7 +13,7 @@ commonUtil.render(document.getElementById('footer1'), footer1Tpl)
 
 var myswiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
-    loop: false ,
+    loop: true ,
     autoplay:2500,
     speed:2500,
     freeMode : true,

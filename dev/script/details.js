@@ -80,7 +80,7 @@
 
 	var myswiper = new Swiper('.swiper-container', {
 	    direction: 'horizontal',
-	    loop: false ,
+	    loop: true ,
 	    autoplay:2500,
 	    speed:2500,
 	    freeMode : true,
@@ -112,7 +112,7 @@
 /* 3 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>   	<div class=\"box1\">		<div class=\"swiper-container\">		    <div class=\"swiper-wrapper\">		        <div class=\"swiper-slide\">Slide 1</div>		        <div class=\"swiper-slide\">Slide 2</div>		        <div class=\"swiper-slide\">Slide 3</div>		    </div>	    <div class=\"swiper-pagination\"></div></div>	</div>	<div class=\"box2\">		<div>			猜你会喜欢		</div>		<ul>					</ul>	</div> 	 <div id=\"footer1\"></div>  </section>  <div id=\"footer\"></div></div>"
+	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>   	<div class=\"box1\">			<div class=\"swiper-container\">			    <div class=\"swiper-wrapper\">			        <div class=\"swiper-slide\"><img src=\"https://resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555471708358_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/1491555555888169_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555526861189_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555495811255_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555443712434_750X800.png\"/></div>			    </div>		    <div class=\"swiper-pagination\"></div>			</div>			<div class=\"goods\">				<header>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</header>					<ol>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>					</ol>				<footer>					<div class=\"left\">						<p>颜色：小岛蓝（458）</p>						<p>STYLE#1269279</p>					</div>					<div class=\"right\">						<p><span class=\"yo-ico\">&#xe6f2;</span>分享</p>					</div>				</footer>				<aside>					下单后30分钟内未付款，订单将自动取消，请您尽快完成支付！				</aside>			</div>		</div>		<div class=\"box2\">			<div>				猜你会喜欢			</div>			<ul>							</ul>		</div> 	 <div id=\"footer1\"></div>  </section>  <div id=\"footer\"></div></div>"
 
 /***/ }),
 /* 4 */
