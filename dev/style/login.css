@@ -972,24 +972,32 @@ a {
       font-size: .12rem;
       line-height: .16rem;
       width: 100%;
-      margin-bottom: .2rem; }
+      margin-bottom: .2rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between; }
       .m-index section #rember .left {
-        align-items: baseline;
-        display: inline-flex;
-        align-self: flex-start;
-        line-height: .16rem; }
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px;
+        line-height: .2rem; }
         .m-index section #rember .left input {
           width: .2rem; }
       .m-index section #rember a {
         line-height: .16rem;
-        display: inline-flex;
-        align-self: flex-end;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px;
         text-decoration: underline;
-        color: #1D1D1D; }
+        color: #1D1D1D;
+        text-align: right; }
       .m-index section #rember .yo-ico {
         font-size: .24rem;
         color: #000;
-        margin-right: .1rem; }
+        margin-right: .05rem; }
       .m-index section #rember .isok {
         margin-left: -.34rem; }
     .m-index section .reg-box {
@@ -1131,8 +1139,8 @@ a {
   overflow: hidden;
   /*margin-right: 4.5%;*/ }
 
-.swiper-slide:first-child {
-  /*display: none;*/ }
+.swiper-slide:last-child {
+  height: .8rem; }
 
 .show-bar {
   width: 100%;
@@ -1244,7 +1252,7 @@ a {
     height: .25rem; }
 
 .swiper-slide:last-child {
-  height: 8rem; }
+  height: 8.7rem; }
 
 #zhuce {
   margin: .2rem 0;
@@ -1257,3 +1265,9 @@ a {
 
 .msg-ok .isok {
   margin-left: -.26rem; }
+
+.msg-tip {
+  font-size: .12rem;
+  line-height: .2rem;
+  color: #E52837;
+  display: none; }

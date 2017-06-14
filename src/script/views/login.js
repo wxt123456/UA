@@ -57,11 +57,13 @@ function get_mobile_code(){
 
 
 // swiper
-// 
+//
 var mySwiper4 = new Swiper('.swiper-container',{
+  loop: false
 	// effect : 'flip'
 	// pagination : '.swiper-pagination'
 })
+
 $('#tap-reg').tap(function(){
 	console.log(4455);
 	var hideContent = $(this).parent(".swiper-slide");
@@ -89,41 +91,69 @@ $('#rember .left').tap(function(e){
 })
 
 
-// /*随机生成4位验证码*/
-//  /*step1:将所有字母，数字装入一个数组备用*/
-//  var codes=[];
-//  //数字:48-57;
-//  for(var i=48;i<57;codes.push(i),i++);
-//  /*console.log(codes);*/
-// //大写字母:65-90;
-// for(var i=60;i<90;codes.push(i),i++);
-// //小写字母:97-122;
-// for(var i=97;i<122;codes.push(i),i++);
-// function getCode() {
-//     var arr = [];
-//     for (var i = 0; i < 4; i++) {   //从0-61之间取随机数
-// var index = Math.floor(Math.random() * (61 - 0 + 1) + 0);
-// var char = String.fromCharCode(codes[index]);
-// arr.push(char);
-//     }
-//     return arr.join("")
-// }
-// function trim(str){
-//     var reg=/(^\s+)|(\s+$)/g;
-//     return str.replace(reg,"");
-// }
-// while (true){
-//     var code=getCode();
-//     var input=prompt("输入验证码:"+code);
-//     var reg=/^[a-zA-Z0-9]{4}$/;
-//     if(reg.test(input)) {
-//         if (input.toLowerCase() == code.toLowerCase()) {
-//             document.write("登录成功");
-//             break;
-//         } else {
-//             alert("验证码错误！");
-//         }
-//     }else {
-//         alert("验证码格式错误")
-//     }
-// };
+// 表单验证
+// 添加blur事件
+$('.form-input').each(function() {
+  $(this).find('input').blur(function(){
+    var flag = false;
+    var iMsg = $(this).attr('data-inputType');
+    var reg;
+    var loguser;
+    var logpwd;
+
+    var data ={
+      maillib : [],
+      phonelib : [],
+      pwdlib : []
+    }
+
+    console.log(iMsg);
+
+    switch (iMsg) {
+        case 'log-user':
+
+          break;
+        case 'log-pwd':
+
+          break;
+        case 'log-yzm':
+
+          break;
+        case 'reg-mail':
+            reg = /([-a-zA-z0-9]{1,63}\.)+[-a-zA-Z0-9]{1,63}/;
+            flag = reg.test(iMsg);
+            console.log(reg.test(iMsg));
+            break;
+        case 'reg-phone':
+
+        	reg = /^1[34578]\d{9}$/;
+            flag = reg.test(iMsg);
+            console.log(reg.test(iMsg));
+          break;
+        case 'reg-iyzm':
+
+          break;
+        case 'reg-pyzm':
+
+          break;
+        case 'reg-pwd':
+        	reg = /( ([a-zA-Z]+)([0-9]+) ){6-14}/;
+            break;
+
+      }
+
+
+
+      if(flag){
+        $(this).parent().siblings('.msg-tip').hide();
+      } else {
+        $(this).parent().siblings('.msg-tip').show();
+      }
+
+
+      postMessage(data)
+
+  })
+})
+
+// 将账号密码存到webworker

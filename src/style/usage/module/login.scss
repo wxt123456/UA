@@ -21,7 +21,7 @@
             align-self: center;
             /*height:.39rem;*/
             margin-bottom: .1rem;
-            
+
             .form-input{
                 justify-content: space-between;
                 /*height:100%;*/
@@ -63,35 +63,34 @@
             line-height: .16rem;
             width: 100%;
             margin-bottom: .2rem;
-     
+            @include flexbox();
+            justify-content: space-between;
             .left{
-               align-items: baseline;
-                display: inline-flex;
-                align-self: flex-start;
-                line-height: .16rem;
+                @include flex(1);
+                line-height: .2rem;
                 input{
                   width:.2rem;
                 }
             }
             a{
                 line-height: .16rem;
-                display: inline-flex;
-                align-self: flex-end;
+                @include flex(1);
                 text-decoration: underline;
                 color: #1D1D1D;
+                text-align: right;
             }
-             
+
               .yo-ico{
                 font-size: .24rem;
                 color:#000;
-                margin-right: .1rem;
+                margin-right: .05rem;
               }
               .isok{
                 margin-left: -.34rem;
               }
         }
-        
-        
+
+
       .reg-box{
           margin-top: .2rem;
           @include border(5px 0 0 0, #f5f5f5);
@@ -158,8 +157,8 @@
         /*margin-right: 4.5%;*/
       }
 
-      .swiper-slide:first-child{
-        /*display: none;*/
+      .swiper-slide:last-child{
+        height:.8rem;
       }
       .show-bar{
         width:100%;
@@ -189,7 +188,7 @@
           @include border(1px, #c7c7c7);
           line-height: .38rem;
           text-align: center;
-          display: inline-block; 
+          display: inline-block;
         }
         .cut{
           border-color: #000;
@@ -221,7 +220,7 @@
 
       }
       .swiper-slide:last-child{
-        height:8rem;
+        height:8.7rem;
       }
       #zhuce{
         margin: .2rem 0;
@@ -232,9 +231,15 @@
         .yo-ico{
           font-size: .24rem;
           color:#000;
-          
+
         }
         .isok{
           margin-left: -.26rem;
         }
+      }
+      .msg-tip{
+        font-size: .12rem;
+        line-height: .2rem;
+        color: #E52837;
+        display: none;
       }
