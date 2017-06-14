@@ -99,7 +99,7 @@
 	$('#search-input').blur(function(){
 		data.list.unshift($(this).val());
 		$('.history2').html(template('historyTel', data));
-		window.location.href="list.html";
+		window.location.href="goodsList.html";
 	})
 
 	$('#failback').click(function(){
@@ -109,11 +109,6 @@
 	$('#hot-content').click(function(){
 		window.location.href="list.html"
 	});
-
-
-
-
-
 
 
 

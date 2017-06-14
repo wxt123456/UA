@@ -854,10 +854,12 @@ a {
         text-align: center;
         line-height: .6rem;
         font-size: .26rem; }
-        #header header ul li a img {
-          height: .6rem;
-          width: .6rem;
-          margin-top: -0.04rem; }
+        #header header ul li a {
+          color: #000; }
+          #header header ul li a img {
+            height: .6rem;
+            width: .6rem;
+            margin-top: -0.04rem; }
 
 #footer div {
   height: .45rem;

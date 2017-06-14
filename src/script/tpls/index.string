@@ -11,7 +11,7 @@
 		       			<h4>铸就UA THREADBORNE SLINGFLEX非凡的舒适鞋面</h4>
 		       		</div>
 		       		<div class="scroll-btn">
-		       			<a href="###">立即购买</a>
+		       			<a href="myShoppingCart.html">立即购买</a>
 		       		</div>
 		        </div>
 		        <div class="swiper-slide">
@@ -21,9 +21,9 @@
 		       			<h4>本季热门潮流，凸显时尚个性，成为瞩目焦点</h4>
 		       		</div>
 		       		<div class="scroll-btn">
-		       			<a href="###">立即购买</a>
-		       			<a href="###">了解更多</a>
-		       			
+		       			<a href="myShoppingCart.html">立即购买</a>
+		       			<a href="goodsList.html">了解更多</a>
+
 		       		</div>
 		        </div>
 		        <div class="swiper-slide">
@@ -33,16 +33,16 @@
 		       			<h4>更佳材质 更赞体感</h4>
 		       		</div>
 		       		<div class="scroll-btn">
-		       			<a href="###">立即购买</a>
+		       			<a href="myShoppingCart.html">立即购买</a>
 
-		       			
+
 		       		</div>
 		        </div>
 		    </div>
 		    <!-- 如果需要分页器 -->
 		    <div class="swiper-pagination"></div>
 		</div>
-		
+
    	</div>
    	<article class="box-content">
 		<div class="new-product">
@@ -67,7 +67,7 @@
 			<p>THREADBORNE ¾ UTILITY T恤</p>
 			<span>立即购买</span>
 		</li>
-		
+
 		<li class="floor">
 			<div class="img">
 				<img src="https://resource.underarmour.cn/resources/images/BannerPic/homepage/HP-2-2_20170420.jpg" alt="">
@@ -112,9 +112,9 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
-				
+
 				<li>
 					<a href="void:javascript;" class="lv1">
 						热卖商品
@@ -141,7 +141,7 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
 
 				<li>
@@ -170,7 +170,7 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
 
 				<li>
@@ -199,7 +199,7 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
 
 				<li>
@@ -228,7 +228,7 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
 
 				<li>
@@ -257,7 +257,7 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
 
 				<li>
@@ -286,9 +286,9 @@
 							</a>
 						</li>
 					</ul>
-					
+
 				</li>
 		</ul>
   </section>
   <div id="footer"></div>
-</div> 
+</div>

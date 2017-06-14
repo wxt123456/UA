@@ -23,5 +23,4 @@ var myswiper = new Swiper('.swiper-container', {
     freeMode : true,
     // 如果需要分页器
     pagination: '.swiper-pagination'
-})        
-
+})
