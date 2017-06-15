@@ -16,8 +16,10 @@ $.ajax({
 	success:function(res){
 		res=JSON.parse(res)
 		var dateSource=res
-		dateSource['show']=!isShow
-		var html=template('goodsList',dateSource)
-		$('.section').html(html)
+		setTimeout(function(){
+			dateSource['show']=!isShow
+			var html=template('goodsList',dateSource)
+			$('.section').html(html)
+		},1000)
 	}
 })

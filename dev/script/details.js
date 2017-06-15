@@ -86,7 +86,34 @@
 	    freeMode : true,
 	    pagination: '.swiper-pagination'
 	})         
-
+	var arr=[	"https://resource.underarmour.cn/resources/nprdimg/2017/3/7/14888529261176581_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/11/18/14794682542275904_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/4/27/14932614638097041_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/5/5/14939687083365821_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/1/19/14848067645503516_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/12/2/14806612683146856_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/3/13/14893839787674952_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/1/5/14835956490181178_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/8/17/14714189096212618_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/2/21/14876599646837988_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/8/15/14712486183631785_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/12/2/14806611962054456_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/1/16/14845292313166286_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/1/18/14847091109381238_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/4/6/1491446963599231_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/8/16/14713281049535449_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/4/13/1492076145913529_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/5/9/1494297035208292_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555471708358_320X384.png",
+				"https://resource.underarmour.cn/resources/nprdimg/2016/8/18/14714857751625954_320X384.png"
+	]
+	$('#color li').on('click',function(){
+		$('.box1 .img1')[0].src=arr[Math.round(Math.random()*20)]
+		$('.box1 .img2')[0].src=arr[Math.round(Math.random()*20)]
+		$('.box1 .img3')[0].src=arr[Math.round(Math.random()*20)]
+		$('.box1 .img4')[0].src=arr[Math.round(Math.random()*20)]
+		$('.box1 .img5')[0].src=arr[Math.round(Math.random()*20)]
+	})
 
 	$.ajax({
 		url:'/api/specific/ajaxproductlist/productlist/?p=3&id=2&cat=724&sport_gender=39&order=entity_id&dir=desc',
@@ -112,7 +139,7 @@
 /* 3 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>   	<div class=\"box1\">			<div class=\"swiper-container\">			    <div class=\"swiper-wrapper\">			        <div class=\"swiper-slide\"><img src=\"https://resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555471708358_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/1491555555888169_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555526861189_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555495811255_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555443712434_750X800.png\"/></div>			    </div>		    <div class=\"swiper-pagination\"></div>			</div>			<div class=\"goods\">				<header>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</header>					<ol>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>					</ol>				<footer>					<div class=\"left\">						<p>颜色：小岛蓝（458）</p>						<p>STYLE#1269279</p>					</div>					<div class=\"right\">						<p><span class=\"yo-ico\">&#xe6f2;</span>分享</p>					</div>				</footer>				<aside>					下单后30分钟内未付款，订单将自动取消，请您尽快完成支付！				</aside>			</div>		</div>		<div class=\"box2\">			<div>				猜你会喜欢			</div>			<ul>							</ul>		</div> 	 <div id=\"footer1\"></div>  </section>  <div id=\"footer\"></div></div>"
+	module.exports = "<div class=\"m-index\">  <div id=\"header\"></div>  <section>   	<div class=\"box1\">			<div class=\"swiper-container\">			    <div class=\"swiper-wrapper\">			        <div class=\"swiper-slide\"><img class=\"img1\" src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555471708358_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img class=\"img2\" src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/1491555555888169_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img class=\"img3\" src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555526861189_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img class=\"img4\" src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555495811255_750X800.png\"/></div>			        <div class=\"swiper-slide\"><img class=\"img5\" src=\"//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555443712434_750X800.png\"/></div>			    </div>		    <div class=\"swiper-pagination\"></div>			</div>			<div class=\"goods\">				<header>					<p>男士UA Curry 3篮球鞋</p>					<span>￥1299.00</span>				</header>					<ol id=\"color\">						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>						<li><span></span></li>					</ol>				<footer>					<div class=\"left\">						<p>颜色：小岛蓝（458）</p>						<p>STYLE#1269279</p>					</div>					<div class=\"right\">						<p><span class=\"yo-ico\">&#xe6f2;</span>分享</p>					</div>				</footer>				<aside>					下单后30分钟内未付款，订单将自动取消，请您尽快完成支付！				</aside>			</div>		</div>		<div class=\"box2\">			<div>				猜你会喜欢			</div>			<ul>							</ul>		</div> 	 <div id=\"footer1\"></div>  </section>  <div id=\"footer\"></div></div>"
 
 /***/ }),
 /* 4 */

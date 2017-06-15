@@ -4,11 +4,11 @@
    	<div class="box1">
 			<div class="swiper-container">
 			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><img src="https://resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555471708358_750X800.png"/></div>
-			        <div class="swiper-slide"><img src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/1491555555888169_750X800.png"/></div>
-			        <div class="swiper-slide"><img src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555526861189_750X800.png"/></div>
-			        <div class="swiper-slide"><img src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555495811255_750X800.png"/></div>
-			        <div class="swiper-slide"><img src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555443712434_750X800.png"/></div>
+			        <div class="swiper-slide"><img class="img1" src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555471708358_750X800.png"/></div>
+			        <div class="swiper-slide"><img class="img2" src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/1491555555888169_750X800.png"/></div>
+			        <div class="swiper-slide"><img class="img3" src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555526861189_750X800.png"/></div>
+			        <div class="swiper-slide"><img class="img4" src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555495811255_750X800.png"/></div>
+			        <div class="swiper-slide"><img class="img5" src="//resource.underarmour.cn/resources/nprdimg/2017/4/7/14915555443712434_750X800.png"/></div>
 			    </div>
 		    <div class="swiper-pagination"></div>
 			</div>
@@ -17,7 +17,7 @@
 					<p>男士UA Curry 3篮球鞋</p>
 					<span>￥1299.00</span>
 				</header>
-					<ol>
+					<ol id="color">
 						<li><span></span></li>
 						<li><span></span></li>
 						<li><span></span></li>
