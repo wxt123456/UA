@@ -1,12 +1,37 @@
 @charset "UTF-8";
+@import "../../lib/element/yo-loading";
 
+@include yo-loading()
 .m-index{
     height: 100%;
     background: #fff;
     @include flexbox();
     @include flex-direction(column);
-    section{      
+    section{   
+        flex: 1; 
+        position: relative;  
     	overflow: scroll;
+    	.cont{
+            height: 100%;
+            .yo-loading{
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                text-align: center;
+                .yo-ico{
+                    transform-origin:50% 0;
+                    position: absolute;
+                    top: 30%;
+                    left: 40%;
+                    display: block;
+                    height: .5rem;
+                    width: .5rem;
+                }
+                .text{
+                    margin-top: 85%;
+                }
+            }
+    	}
 		article{
 			padding:.2rem .2rem .15rem ;
 			@include flexbox();

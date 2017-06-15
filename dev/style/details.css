@@ -829,6 +829,7 @@ a {
 
 .m-index {
   height: 100%;
+  background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -840,14 +841,96 @@ a {
     flex: 1;
     overflow: scroll; }
     .m-index section .box1 {
-      height: 2.17rem;
-      width: 100%;
-      padding: .46rem 0 .58rem 0;
-      text-align: center; }
-      .m-index section .box1 i {
-        font-size: .7rem;
-        color: #999;
-        margin: .2rem 0; }
+      background: #ddd; }
+      .m-index section .box1 .swiper-container .swiper-wrapper .swiper-slide {
+        text-align: center; }
+        .m-index section .box1 .swiper-container .swiper-wrapper .swiper-slide img {
+          width: 80%;
+          height: 80%; }
+      .m-index section .box1 .goods {
+        padding: .1rem;
+        background: #fff; }
+        .m-index section .box1 .goods header p {
+          font-size: .14rem; }
+        .m-index section .box1 .goods header span {
+          font-size: .12rem; }
+        .m-index section .box1 .goods ol {
+          width: 100%;
+          overflow: hidden;
+          margin-bottom: .15rem; }
+          .m-index section .box1 .goods ol li {
+            padding: .02rem;
+            margin: .1rem .06rem 0;
+            float: left;
+            width: 12%; }
+            .m-index section .box1 .goods ol li span {
+              display: block;
+              height: .3rem;
+              position: relative;
+              box-sizing: border-box; }
+              .m-index section .box1 .goods ol li span::after {
+                pointer-events: none;
+                position: absolute;
+                z-index: 999;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                content: "\0020";
+                border-color: #ccc;
+                border-style: solid;
+                border-width: 1px;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0; }
+                @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+                  .m-index section .box1 .goods ol li span::after {
+                    width: 100%;
+                    height: 100%; } }
+                @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+                  .m-index section .box1 .goods ol li span::after {
+                    width: 200%;
+                    height: 200%;
+                    -webkit-transform: scale(0.5);
+                    transform: scale(0.5); } }
+                @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+                  .m-index section .box1 .goods ol li span::after {
+                    width: 300%;
+                    height: 300%;
+                    -webkit-transform: scale(0.33333);
+                    transform: scale(0.33333); } }
+          .m-index section .box1 .goods ol li:nth-child(1) span {
+            background: #fff; }
+          .m-index section .box1 .goods ol li:nth-child(2) span {
+            background: #343424; }
+          .m-index section .box1 .goods ol li:nth-child(3) span {
+            background: #54b2de; }
+          .m-index section .box1 .goods ol li:nth-child(4) span {
+            background: #ff0035; }
+          .m-index section .box1 .goods ol li:nth-child(5) span {
+            background: #7F7E78; }
+          .m-index section .box1 .goods ol li:nth-child(6) span {
+            background: #FF2938; }
+          .m-index section .box1 .goods ol li:nth-child(7) span {
+            background: #231F20; }
+          .m-index section .box1 .goods ol li:nth-child(8) span {
+            background: #BD1B34; }
+          .m-index section .box1 .goods ol li:nth-child(9) span {
+            background: #C4C0C1; }
+        .m-index section .box1 .goods footer {
+          overflow: hidden;
+          color: #7c7c7c; }
+          .m-index section .box1 .goods footer .left {
+            font-size: .12rem;
+            float: left;
+            margin-left: .1rem; }
+          .m-index section .box1 .goods footer .right {
+            float: right;
+            margin-right: .1rem; }
+        .m-index section .box1 .goods aside {
+          background: #ddd;
+          color: red;
+          text-align: center;
+          font-size: .12rem;
+          padding: .1rem; }
     .m-index section .box2 {
       width: 100%;
       position: relative; }
@@ -894,7 +977,7 @@ a {
         justify-content: space-between; }
         .m-index section .box2 ul > li {
           padding: .08rem;
-          width: 45%;
+          width: 50%;
           text-align: center; }
           .m-index section .box2 ul > li img {
             width: 90%; }
