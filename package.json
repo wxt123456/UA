@@ -4,9 +4,9 @@
   "description": "my WebAPP",
   "main": "index.js",
   "scripts": {
-   	"db":"json-server src/mock/mock.js -p 9000",
-    "dev":"gulp --env development",
-    "build":"gulp pack --env production"
+    "db": "json-server src/mock/mock.js -p 9000",
+    "dev": "gulp --env development",
+    "build": "gulp pack --env production"
   },
   "repository": {
     "type": "git",
