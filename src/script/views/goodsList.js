@@ -12,14 +12,15 @@ var isShow=true;
 var html=template('goodsList',{show:isShow})
 $('.section').html(html)
 $.ajax({
-	url:'/api/specific/ajaxproductlist/productlist/?p=3&id=2&cat=724&sport_gender=39&order=entity_id&dir=desc',
+	url:'/api/search/hfindex/ajaxIndex',
 	success:function(res){
-		res=JSON.parse(res)
+		res=res
 		var dateSource=res
 		setTimeout(function(){
 			dateSource['show']=!isShow
 			var html=template('goodsList',dateSource)
 			$('.section').html(html)
+			console.log(dateSource)
 		},1000)
 	}
 })

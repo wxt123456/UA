@@ -120,14 +120,15 @@
 	var html=template('goodsList',{show:isShow})
 	$('.section').html(html)
 	$.ajax({
-		url:'/api/specific/ajaxproductlist/productlist/?p=3&id=2&cat=724&sport_gender=39&order=entity_id&dir=desc',
+		url:'/api/search/hfindex/ajaxIndex',
 		success:function(res){
-			res=JSON.parse(res)
+			res=res
 			var dateSource=res
 			setTimeout(function(){
 				dateSource['show']=!isShow
 				var html=template('goodsList',dateSource)
 				$('.section').html(html)
+				console.log(dateSource)
 			},1000)
 		}
 	})
@@ -138,7 +139,7 @@
 /* 10 */
 /***/ (function(module, exports) {
 
-	module.exports = "	<div class=\"m-index\">	  <div id=\"header\"></div>	  <section>	  	<div class=\"section\"><script id=\"goodsList\" type=\"text/html\">		{{if show}}		<div class=\"flex\">			<div class=\"yo-modal\"><div class=\"cont\"><div class=\"yo-loading\"><i class=\"yo-ico\"></i><div class=\"text\">加载中...</div></div></div></div>	  </div>	  {{/if}}	  {{if !show}}	   	<article>	   		<p>男子新品推荐</p>	   		<span>共157件</span>	   	</article>	   	<aside>	   		<p class=\"p1\">筛选<span class=\"yo-ico\">&#xe622;</span></p>	   		<p class=\"p2\">默认排序<span class=\"yo-ico\">&#xe659;</span></p>	   	</aside>			<ul>				{{each info}}					<li>						<img src=\"{{$value.img}}\" />						<article>{{$value.colors}}</article>						<p>{{$value.name}}</p>						<span>{{$value.price}}</span>					</li>				{{/each}}			</ul>			<div>				UA（安德玛）男子新品推荐系列产品，包含男士印花短袖，男士库里篮球鞋，男士强力伸缩裤等男士运动装备，购买专业男士运动装备，就在Under Armour中国官网。 			</div>		{{/if}}</script>		</div>	  </section>	  <div id=\"footer\"></div>	</div>"
+	module.exports = "	<div class=\"m-index\">	  <div id=\"header\"></div>	  <section>	  	<div class=\"section\"><script id=\"goodsList\" type=\"text/html\">		{{if show}}		<div class=\"flex\">			<div class=\"yo-modal\"><div class=\"cont\"><div class=\"yo-loading\"><i class=\"yo-ico\"></i><div class=\"text\">加载中...</div></div></div></div>	  </div>	  {{/if}}	  {{if !show}}	   	<article>	   		<p>男子新品推荐</p>	   		<span>共157件</span>	   	</article>	   	<aside>	   		<p class=\"p1\">筛选<span class=\"yo-ico\">&#xe622;</span></p>	   		<p class=\"p2\">默认排序<span class=\"yo-ico\">&#xe659;</span></p>	   	</aside>			<ul>				{{each list}}					<li>						<img src=\"http://img10.hlamall.cn{{$value.pic_url}}\" />						<article>{{$value.id}}</article>						<p>{{$value.goods_name}}</p>						<span>{{$value.goods_price}}</span>					</li>				{{/each}}			</ul>			<div>				UA（安德玛）男子新品推荐系列产品，包含男士印花短袖，男士库里篮球鞋，男士强力伸缩裤等男士运动装备，购买专业男士运动装备，就在Under Armour中国官网。			</div>		{{/if}}</script>		</div>	  </section>	  <div id=\"footer\"></div>	</div>"
 
 /***/ })
 /******/ ]);

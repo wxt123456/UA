@@ -55,7 +55,9 @@ gulp.task('webserver',function(){
 		            }
 		          }),
 		          proxy('/api', {
-		            target: 'http://www.adidas.com.cn/',
+                target:'http://m.hlamall.cn/',
+		           // target: 'http://www.adidas.com.cn/',
+              //  target:'http://localhost:3000/',
 		            changeOrigin: true,
 		            pathRewrite: {
 		              '^/api': ''
@@ -130,7 +132,7 @@ gulp.task('copyhtml',function(){
 	gulp.src('./src/*.html')
     .pipe(gulpif(options.env === 'production', gulp.dest('./build/')))
     .pipe(gulpif(options.env !== 'production', gulp.dest('./dev/')))
-})	
+})
 
 //HTML增加版本号
 gulp.task('packhtml', function () {
@@ -168,4 +170,3 @@ gulp.task("watch",function(){
 gulp.task('default', ['pack', 'watch', 'webserver'], function () {
   console.log('done.')
 })
-

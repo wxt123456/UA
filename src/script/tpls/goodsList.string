@@ -18,17 +18,17 @@
 	   		<p class="p2">默认排序<span class="yo-ico">&#xe659;</span></p>
 	   	</aside>
 			<ul>
-				{{each info}}
+				{{each list}}
 					<li>
-						<img src="{{$value.img}}" />
-						<article>{{$value.colors}}</article>
-						<p>{{$value.name}}</p>
-						<span>{{$value.price}}</span>
+						<img src="http://img10.hlamall.cn{{$value.pic_url}}" />
+						<article>{{$value.id}}</article>
+						<p>{{$value.goods_name}}</p>
+						<span>{{$value.goods_price}}</span>
 					</li>
 				{{/each}}
 			</ul>
 			<div>
-				UA（安德玛）男子新品推荐系列产品，包含男士印花短袖，男士库里篮球鞋，男士强力伸缩裤等男士运动装备，购买专业男士运动装备，就在Under Armour中国官网。 
+				UA（安德玛）男子新品推荐系列产品，包含男士印花短袖，男士库里篮球鞋，男士强力伸缩裤等男士运动装备，购买专业男士运动装备，就在Under Armour中国官网。
 			</div>
 		{{/if}}
 </script>
